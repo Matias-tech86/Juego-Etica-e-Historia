@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400;700&family=Cinzel:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Libre Baskerville", serif;
+  --font-serif: "Cinzel", serif;
+  --font-hand: "Caveat", cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-[#e8e2d6] text-stone-900 antialiased;
+  }
+}
+
+.parchment-bg {
+  background-color: #f4ecd8;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+.ink-bleed {
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+.wax-seal {
+  background: radial-gradient(circle at 30% 30%, #b91c1c, #7f1d1d);
+  box-shadow: 
+    inset 0 0 10px rgba(0,0,0,0.5),
+    2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.scroll-shadow {
+  box-shadow: 
+    0 10px 30px -5px rgba(0,0,0,0.3),
+    0 0 0 1px rgba(0,0,0,0.05);
+}
